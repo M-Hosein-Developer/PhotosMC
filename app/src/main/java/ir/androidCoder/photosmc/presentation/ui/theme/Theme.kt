@@ -1,4 +1,4 @@
-package ir.androidCoder.photosmc.ui.theme
+package ir.androidCoder.photosmc.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

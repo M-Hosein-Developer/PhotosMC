@@ -1,4 +1,4 @@
-package ir.androidCoder.photosmc.ui.theme
+package ir.androidCoder.photosmc.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

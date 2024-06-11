@@ -1,4 +1,4 @@
-package ir.androidCoder.photosmc
+package ir.androidCoder.photosmc.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import ir.androidCoder.photosmc.ui.theme.PhotosMCTheme
+import ir.androidCoder.photosmc.presentation.ui.theme.PhotosMCTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

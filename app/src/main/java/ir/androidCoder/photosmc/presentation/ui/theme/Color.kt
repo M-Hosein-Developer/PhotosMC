@@ -1,4 +1,4 @@
-package ir.androidCoder.photosmc.ui.theme
+package ir.androidCoder.photosmc.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

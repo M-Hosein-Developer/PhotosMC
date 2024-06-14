@@ -83,3 +83,49 @@ fun ToolbarPhotoScreen(){
 
 }
 
+@Composable
+fun Photos(data: List<PhotoResponse.PhotoResponseItem>) {
+
+    LazyVerticalStaggeredGrid(
+        columns = StaggeredGridCells.Fixed(2),
+        modifier = Modifier.fillMaxSize(),
+        contentPadding = PaddingValues(16.dp),
+        horizontalArrangement = Arrangement.spacedBy(16.dp),
+        verticalItemSpacing = 16.dp
+    ) {
+
+        items(data.size) { it ->
+
+            if (data.size > 1)
+                PhotosItem(
+                    Random.nextInt(200, 370).dp,
+                    data[it]
+                )
+
+        }
+
+    }
+
+}
+
+@Composable
+fun PhotosItem(height: Dp, photoResponseItem: PhotoResponse.PhotoResponseItem) {
+
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(height)
+            .clip(RoundedCornerShape(10.dp))
+    ) {
+
+        AsyncImage(
+            model = photoResponseItem.urls.small,
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+
+    }
+
+
+}
